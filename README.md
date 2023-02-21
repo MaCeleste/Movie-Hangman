@@ -7,7 +7,8 @@ This is my final project for Harvard University [CS50p Introduction to Programmi
 
 ## Prerequisites
 
-You will need an API Key from TheMovieDB. [Create your API key](https://developers.themoviedb.org/3/getting-started/introduction)
+You will need an API Key from TheMovieDB. 
+[Create your API key](https://developers.themoviedb.org/3/getting-started/introduction)
 You can enter the api-key in the env file.
 
 ```
