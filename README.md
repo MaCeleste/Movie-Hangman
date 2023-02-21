@@ -5,6 +5,16 @@
 A hangman game in Python where you have to guess movie titles from TheMovieDB top rated movies.
 This is my final project for Harvard University [CS50p Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/)
 
+## Prerequisites
+
+You will need an API Key from TheMovieDB. [Create your API key](https://developers.themoviedb.org/3/getting-started/introduction)
+You can enter the api-key in the env file.
+
+```
+TMDB_API_KEY="<your api_key>"
+# replace <your api_key> with your own api-key
+```
+
 ## Libraries
 
 - random: [https://docs.python.org/3/library/random.html](https://docs.python.org/3/library/random.html)
@@ -12,6 +22,8 @@ This is my final project for Harvard University [CS50p Introduction to Programmi
 - Figlet: [https://pypi.org/project/pyfiglet/0.7/](https://pypi.org/project/pyfiglet/0.7/)
 - requests: [https://pypi.org/project/requests/](https://pypi.org/project/requests/)
 - json: [https://docs.python.org/3/library/json.html](https://docs.python.org/3/library/json.html)
+- os: [https://docs.python.org/3/library/os.html](https://docs.python.org/3/library/os.html)
+- dotenv: [https://pypi.org/project/python-dotenv/](https://pypi.org/project/python-dotenv/)
 
 ## Usage
 

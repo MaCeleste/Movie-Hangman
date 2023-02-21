@@ -3,19 +3,19 @@ import sys
 from pyfiglet import Figlet
 import requests
 import json
-import config
+import os
+from dotenv import load_dotenv
 
-# Setting up header font 
+# Setting up TMDB API Key
 
-figlet = Figlet()
-fonts = figlet.getFonts()
-figlet.setFont(font='ogre')
+load_dotenv()
+API_KEY = os.getenv('TMDB_API_KEY')
 
 # Retrieve top rated movies in TheMovieDB
 
 pages = {'results': []}
 for i in range(5):
-    page = requests.get(f'https://api.themoviedb.org/3/movie/top_rated?api_key={config.api_key}&language=en-US&page={i+1}').json()
+    page = requests.get(f'https://api.themoviedb.org/3/movie/top_rated?api_key={API_KEY}&language=en-US&page={i+1}').json()
     pages['results'].extend(page['results'])
 
 # Create a list that will contain the names of the movies to be guessed by the player
@@ -26,6 +26,11 @@ for result in pages['results']:
     if result['original_language'] == 'en' and len(result['title']) < 40:
         list_of_movies.append(result['title'].strip())
 
+# Setting up header font 
+
+figlet = Figlet()
+fonts = figlet.getFonts()
+figlet.setFont(font='ogre')
 def main():
     print(figlet.renderText('Welcome to\n Movie\n Hangman!'))
 
