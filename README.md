@@ -2,7 +2,7 @@
 
 ## Description
 
-A hangman game in Python where you have to guess movie titles from TheMovieDB top rated movies.
+A hangman game in Python where you have to guess movie titles from [TheMovieDB](https://www.themoviedb.org/?language=en-GB) top rated movies.
 This is my final project for Harvard University [CS50p Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/)
 
 ## Prerequisites
